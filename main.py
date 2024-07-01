@@ -23,7 +23,7 @@ class GUI:
         self.tenb.place(x = 150, y = 400, height = 50, width = 50)
         self.kingb = tk.Button(self.root, text = "K", font = ('Calibri', 18), command=self.king)
         self.kingb.place(x = 250, y = 400, height = 50, width = 50)
-        self.queenb = tk.Button(self.root, te4xt = "Q", font = ('Calibri', 18), command=self.queen)
+        self.queenb = tk.Button(self.root, text = "Q", font = ('Calibri', 18), command=self.queen)
         self.queenb.place(x = 350, y = 400, height = 50, width = 50)
         self.jackb = tk.Button(self.root, text = "J", font = ('Calibri', 18), command=self.jack)
         self.jackb.place(x = 450, y = 400, height = 50, width = 50)
@@ -53,7 +53,7 @@ class GUI:
         self.ww += 10
         self.wynik.config(text=self.ww)
     def king(self, event=None):
-        self.ww += 5
+        self.ww += 4
         self.wynik.config(text=self.ww)
     def queen(self, event=None):
         self.ww += 3
